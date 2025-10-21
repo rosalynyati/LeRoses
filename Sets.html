@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Project</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+          <!-- Navigation Bar -->
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+            <div class="container">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                <img class="logo me-2" src="favicon.ico" alt="brand">
+                <span class="fw-bold text-dark">Le Roses</span>
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="dropdownNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                  
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-1" href="index.html">
+                      <i class="bi bi-house-door-fill"></i> Home
+                    </a>
+                  </li>
+
+                  <!-- Products -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                      <i class="bi bi-bag-heart-fill"></i> Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                      <li><a href="Products.html" class="dropdown-item"><i class="bi bi-arrow-through-heart"></i> Earrings</a></li>
+                      <li><a href="Bracelets.html" class="dropdown-item"><i class="bi bi-bezier"></i> Bracelets</a></li>
+                      <li><a href="Necklaces.html" class="dropdown-item"><i class="bi bi-gem"></i> Necklaces</a></li>
+                      <li><a href="Rings.html" class="dropdown-item"><i class="bi bi-circle"></i>Rings</a></li>
+                      <li><a href="Sets.html" class="dropdown-item"><i class="bi bi-stars"></i> Sets</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- About -->
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-1" href="About_us.html">
+                      <i class="bi bi-info-circle-fill"></i> About
+                    </a>
+                  </li>
+
+                  <!-- Learn More -->
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-1" href="#">
+                      <i class="bi bi-journal-text"></i> Learn More
+                    </a>
+                  </li>
+
+                  <!-- Search box -->
+                  <form class="d-flex ms-3 search-form" role="search">
+                    <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+        <!-- Banner Section -->
+        <section class="video-banner position-relative text-center text-white">
+          <video autoplay muted loop playsinline class="video-bg">
+            <source src="video/rose_video2.mp4" type="video/mp4">
+          </video>
+          <div class="banner-content position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-4 fw-bold">Le Roses</h1>
+            <p>⋆｡‧˚ʚ🌹ɞ˚‧｡⋆</p>
+            <p>“Smell the roses. Wear the diamonds. As long as you are happy.” </p>
+            <p>-Rosalyn</p>
+            <a href="Products.html" class="btn btn-lg mt-3">Explore more!</a>
+          </div>
+        </section>
+
+            <!-- Cards Section -->
+            <!-- Sets Collection -->
+          <!-- Sets Collection -->
+        <section class="container my-5">
+          <h1 class="products_title text-center text-white">⋆. 𐙚 ˚Sets Collection⋆. 𐙚 ˚</h1>
+
+          <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets.jpeg" alt="Twins Pair" class="img-fluid rounded mb-3">
+                <h4>Rosy Ensemble</h4>
+                <p class="price">45,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets1.jpeg" alt="The Bloom" class="img-fluid rounded mb-3">
+                <h4>Bloom Set</h4>
+                <p class="price">48,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets2.jpeg" alt="Fading Petals" class="img-fluid rounded mb-3">
+                <h4>Petal Harmony</h4>
+                <p class="price">52,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets3.jpeg" alt="Pearls of Rose" class="img-fluid rounded mb-3">
+                <h4>Pearl Delight</h4>
+                <p class="price">60,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets4.jpeg" alt="Petals of Pearl" class="img-fluid rounded mb-3">
+                <h4>Petal Grace</h4>
+                <p class="price">55,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card text-center p-3 rounded shadow">
+                <img src="images/rose_sets5.jpeg" alt="Hearts of Red" class="img-fluid rounded mb-3">
+                <h4>Crimson Elegance</h4>
+                <p class="price">50,000 MMK</p>
+                <button class="btn btn-buy">Add to Cart</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+
+      <!-- Footer -->
+      <footer class="mt-auto">
+        <div class="row">
+          <div class="col">
+            <img src="favicon.ico" class="logo" alt="">
+            <p>We have one of the best qualities and unique designs here at LeRoses!</p>
+          </div>
+          <div class="col">
+            <h3>Location</h3>
+            <hr>
+            <p>Spooky Doo, 21st</p>
+            <p>Yangon, Myanmar</p>
+            <p class="email-id">LeRoses@gmail.com</p>
+            <h4>+95 932128342399</h4>
+          </div>
+          <div class="col">
+            <h3>Links</h3>
+            <hr>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About_us.html">About</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="#">Learn more</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter</h3>
+            <hr>
+            <form>
+              <i class="bi bi-envelope"></i>
+              <input type="email" placeholder="Enter your E-mail" required>
+              <button type="submit"><i class="bi bi-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">LeRoses - Rosalyn 2025 © - All Rights Reserved</p>
+      </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
